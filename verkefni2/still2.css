@@ -1,0 +1,121 @@
+*{
+
+  box-sizing: border-box;
+}
+
+/*
+  ========================================
+  Clearfix
+  ========================================
+*/
+
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
+  font-size: 1.2em;
+}
+
+
+.greenborder{border: 2px solid green;
+}
+.redborder{border: 3px solid red;
+
+}
+.greenborder2{border: 2px solid green;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    color: red;
+}
+
+.blarborder{border: 3px dashed blue;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding: 20px;
+    color: blue
+    
+}
+.listi1 li{margin: 1em;
+    padding: 1em;
+    border: 3px dashed green;
+    font-size: xx-large;
+}
+.listi2 li{
+    display: inline;
+    margin: 1em;
+    padding: 1em;
+    border: 3px dashed blue;
+
+}
+
+.listi3 li{
+    display: inline-block;
+    margin: 1em;
+    padding: 1em;
+    border: 3px dashed red;
+
+}
+
+.listi4 li{
+    display: block;
+    margin: 1em;
+    padding: 1em;
+    border: 3px dashed lime;
+
+}
+.box{float: left;
+    width: 50%;
+    border: 0.5px solid lime;
+
+
+} 
+.bigS{
+    float: left;
+    font-size: 40px;
+} 
+.mynd{
+    float: right;
+
+
+} 
+.img{
+  float: right;
+
+
+} 
+
+footer {
+  clear: both;
+
+
+}
+
+.yellow {
+  background-color: yellow;
+  text-align: center;
+}
+.box2{float: left;
+  border: 0.5px solid lime;
+
+} 
+
+.klasi1{
+
+  font-style: italic;
+}
+
+.klasi2{
+  font-style: initial;
+}
+
