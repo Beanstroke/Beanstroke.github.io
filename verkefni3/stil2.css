@@ -1,0 +1,87 @@
+header, footer, nav, main, aside, article{
+    border: 0.5px solid red;
+}
+
+body{
+    background-color: yellow;
+    display: grid;
+    grid-template-areas:
+    "haus haus haus haus"
+    "nav nav nav nav"
+    "vinstri haegri midja midja"
+    "fotur fotur fotur fotur";
+}
+
+
+.header{
+    grid-area: haus;
+    text-align: center;
+    font-style: italic;
+    color: red;
+    padding: 10px;
+}
+
+.nav{
+    grid-area: nav;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+}
+
+.main{
+    grid-area: midja;
+    padding: 10px;
+}
+
+.aside{
+    grid-area: haegri;
+    padding: 10px;
+}
+
+.article{
+    grid-area: vinstri;
+    padding: 10px;
+}
+.footer{
+    grid-area: fotur;
+    padding: 10px;
+    text-align: center;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.box{float: middle;
+    border: 1px solid red;
+    margin: 20px;
+    padding: 20px;
+
+  }
+
+
+a:link{
+    color: red;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:visited {
+    color: red;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: lime;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: lime;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  .bleikur{
+    color: red;
+}
