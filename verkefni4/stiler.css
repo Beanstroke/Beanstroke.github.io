@@ -1,0 +1,330 @@
+body{
+    background: fuchsia;
+}  
+header, footer, nav, main, aside, article{
+    border: 0.5px solid fuchsia;
+}
+
+body{
+    background-color: darkslategray;
+    display: grid;
+    grid-template-areas:
+    "nav"
+    "haus"
+    "vinstri" 
+    "midja"
+    "midja"
+    "haegri"
+    "fotur";
+}
+
+
+.header{
+    grid-area: haus;
+    text-align: center;
+    font-style: italic;
+    color: mediumorchid;
+    padding: 10px;
+    background: silver;
+}
+
+.nav{
+    grid-area: nav;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 10px;
+    background: black;
+    text-align: center;    
+}
+
+.nav a{
+    border-bottom: 0.5px solid mediumvioletred;
+}
+
+.main{
+    grid-area: midja;
+    padding: 10px;
+    background: teal;
+}
+
+.aside{
+    grid-area: haegri;
+    padding: 10px;
+    background: cadetblue;
+}
+
+.article{
+    grid-area: vinstri;
+    padding: 10px;
+    background: lime;
+}
+.footer{
+    grid-area: fotur;
+    padding: 10px;
+    text-align: center;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    background: navy;
+}
+.footer a{
+    border-bottom: 0.5px solid mediumvioletred;
+
+}
+
+.box{float: middle;
+    border: 1px solid fuchsia;
+    margin: 20px;
+    padding: 20px;
+
+  }
+
+a:link{
+    color: fuchsia;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:visited {
+    color: fuchsia;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color:cyan;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: cyan;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  .bleikur{
+      color: hotpink;
+  }
+  .myndabox{
+    display: grid;
+    grid-template-columns: 1fr;
+    
+  }
+
+
+
+
+@media screen and (min-width:750px){
+    body{
+        background: lime;
+    }
+    header, footer, nav, main, aside, article{
+        border: 0.5px solid fuchsia;
+    }
+    
+    body{
+        background-color: darkslategray;
+        display: grid;
+        grid-template-areas:
+        "nav nav nav"
+        "haus haus haus"
+        "vinstri midja midja"
+        "haegri midja midja"
+        "fotur fotur fotur";
+    }
+    
+    
+    .header{
+        grid-area: haus;
+        text-align: center;
+        font-style: italic;
+        color: mediumorchid;
+        padding: 10px;
+        background: silver;
+    }
+    
+    .nav{
+        grid-area: nav;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding: 10px;
+        background: black;
+        
+    }
+
+    .nav a{
+        border-bottom: none;
+    }
+    
+    .main{
+        grid-area: midja;
+        padding: 10px;
+        background: teal;
+    }
+    
+    .aside{
+        grid-area: haegri;
+        padding: 10px;
+        background: cadetblue;
+    }
+    
+    .article{
+        grid-area: vinstri;
+        padding: 10px;
+        background: lime;
+    }
+    .footer{
+        grid-area: fotur;
+        padding: 10px;
+        text-align: center;
+    
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        background: navy;
+    }
+    .footer a{
+        border-bottom: none;
+    
+    }
+    
+    .box{float: middle;
+        border: 1px solid fuchsia;
+        margin: 20px;
+        padding: 20px;
+    
+      }
+    
+    a:link{
+        color: fuchsia;
+        background-color: transparent;
+        text-decoration: none;
+    }
+    a:visited {
+        color: fuchsia;
+        background-color: transparent;
+        text-decoration: none;
+      }
+      
+      a:hover {
+        color:cyan;
+        background-color: transparent;
+        text-decoration: underline;
+      }
+      
+      a:active {
+        color: cyan;
+        background-color: transparent;
+        text-decoration: underline;
+      }
+      .bleikur{
+          color: hotpink;
+      }
+      .myndabox{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        
+      }
+}
+
+@media screen and (min-width:1024px){
+    body{
+        background: darkslateblue
+    }
+    header, footer, nav, main, aside, article{
+        border: 0.5px solid fuchsia;
+    }
+    
+    body{
+        background-color: darkslategray;
+        display: grid;
+        grid-template-areas:
+        "nav nav nav nav"
+        "haus haus haus haus"
+        "vinstri midja midja haegri"
+        "fotur fotur fotur fotur";
+    }
+    
+    
+    .header{
+        grid-area: haus;
+        text-align: center;
+        font-style: italic;
+        color: mediumorchid;
+        padding: 10px;
+        background: silver;
+    }
+    
+    .nav{
+        grid-area: nav;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding: 10px;
+        background: black;
+        
+        
+    }
+    
+    .main{
+        grid-area: midja;
+        padding: 10px;
+        background: teal;
+    }
+    
+    .aside{
+        grid-area: haegri;
+        padding: 10px;
+        background: cadetblue;
+    }
+    
+    .article{
+        grid-area: vinstri;
+        padding: 10px;
+        background: lime;
+    }
+    .footer{
+        grid-area: fotur;
+        padding: 10px;
+        text-align: center;
+    
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        background: navy;
+    }
+    
+    .box{float: middle;
+        border: 1px solid fuchsia;
+        margin: 20px;
+        padding: 20px;
+    
+      }
+    
+    a:link{
+        color: fuchsia;
+        background-color: transparent;
+        text-decoration: none;
+    }
+    a:visited {
+        color: fuchsia;
+        background-color: transparent;
+        text-decoration: none;
+      }
+      
+      a:hover {
+        color:cyan;
+        background-color: transparent;
+        text-decoration: underline;
+      }
+      
+      a:active {
+        color: cyan;
+        background-color: transparent;
+        text-decoration: underline;
+      }
+      .bleikur{
+          color: hotpink;
+      }
+      .myndabox{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        
+      }
+}
